@@ -1,6 +1,6 @@
 {
-  "name": "project_name",
-  "description": "Caspio combination database",
+  "name": "2015_traffic_deaths",
+  "description": "single-page map app",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bootlint": "^0.7.0",
