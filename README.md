@@ -1,3 +1,14 @@
+2015 Traffic deaths
+====================
+
+From single-page project.
+
+* There is a Grunt task called `processdata` that goes into `/tasks` and runs a file there. That is where I can change thumbor urls.
+
+
+
+
+
 Single-page project
 ==============================
 

@@ -53,8 +53,10 @@ module.exports = function(grunt) {
             'bower_components/bootstrap/js/collapse.js',
             'bower_components/bootstrap/js/dropdown.js',
             'bower_components/bootstrap/js/transition.js',
-            'src/js/data.js',
-            'src/js/main.js'
+            'bower_components/underscore/underscore.js',
+            'bower_components/leaflet/dist/leaflet.js',
+            'src/js/main.js',
+            'src/js/map.js'
           ]
         }
       }
@@ -145,6 +147,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-ftpush');
   grunt.loadNpmTasks('grunt-bootlint');
   grunt.loadNpmTasks('grunt-slack-hook');
+
+  grunt.loadTasks('./tasks');
 
   grunt.registerTask('default', ['copy', 'less', 'jshint','bootlint','uglify']);
   grunt.registerTask('stage', ['default','ftpush:stage','slack:stage']);
