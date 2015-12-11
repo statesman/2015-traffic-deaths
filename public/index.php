@@ -78,18 +78,17 @@
     </div>
   </div>
 </nav>
-<div id="back">
 
   <article class="container">
     <div class="row">
-      <div class="col-lg-12 header">
-        <h1 id="pagetitle">Traffic fatalities, 2015</h1>
-        <p>Published January 2, 2016</p>
+      <div class="col-xs-12 header">
+        <h1>2015 traffic deaths</h1>
+        <p>Published January 4, 2015</p>
         <p class="author">By Christian McDonald</p>
-        <p>Lucas ipsum dolor sit amet boba calrissian amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.</p>
+        <p>About traffic deaths in 2015, a record years,</p>
       </div>
-    </div>
-       <div class="col-md-9 col-sm-8 col-xs-12">
+
+      <div class="col-md-9 col-sm-8 col-xs-12">
         <div id="map"></div>
       </div>
 
@@ -109,7 +108,6 @@
           </a>
         </div>
       </div>
-
   </article>
 
     <!-- bottom matter -->
@@ -120,7 +118,6 @@
 
     <script src="dist/scripts.js"></script>
 
-</div>
 
   <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>
     <script src="//localhost:35729/livereload.js"></script>
