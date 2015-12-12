@@ -31,11 +31,24 @@ var DbMap = (function($, L, _) {
     onAdd: function (map) {
       var container = L.DomUtil.create('div', 'leaflet-control-legend');
 
-      container.innerHTML = '<ul class="list-inline">' +
-        '<li class="death-marker-whatever">' +
-          '<i class="fa fa-circle"></i> this is thing' +
+      container.innerHTML = 
+      '<ul class="list-inline">' +
+        '<li class="death-marker-driver">' +
+          '<i class="fa fa-circle"></i> Driver ' +
         '</li>' +
-    '</ul>';
+        '<li class="death-marker-passenger">' +
+          '<i class="fa fa-circle"></i> Passenger ' +
+        '</li>' +
+        '<li class="death-marker-motorcycle">' +
+          '<i class="fa fa-circle"></i> Motorcycle ' +
+        '</li>' +
+        '<li class="death-marker-bicycle">' +
+          '<i class="fa fa-circle"></i> Bicycle ' +
+        '</li>' +
+        '<li class="death-marker-pedestrian">' +
+          '<i class="fa fa-circle"></i> Pedestrian ' +
+        '</li>' +
+      '</ul>';
 
       return container;
     }
