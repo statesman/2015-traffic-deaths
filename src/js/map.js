@@ -80,6 +80,7 @@ var DbMap = (function($, L, _) {
     this.map.addControl(new Legend(this.data, 'legend'));
 
     this._drawMarkers(this.data);
+
   }
 
   /**
@@ -141,8 +142,10 @@ var DbMap = (function($, L, _) {
         L.DomUtil.removeClass(oldIcon, 'death-marker-active');
       }
 
+
       // Get the new active marker and store its icon so we can alter it later
       active = e.layer;
+ 
       oldIcon = active._icon;
 
       // Add the active class for the new icon
@@ -150,46 +153,7 @@ var DbMap = (function($, L, _) {
     });
   };
 
-  /**
-   * Filter the deaths shown on the map by flag
-   * @method
-   *
-   * @param {string} flag - the flag's name
-   */
-  Map.prototype.filterByFlag = function(flag) {
-    var copy = _.clone(this.data);
-
-    var filtered = _.filter(copy, function(d) {
-      return d.flags[flag] === true;
-    });
-
-    this._drawMarkers(filtered);
-  };
-
-  /**
-   * Filter the deaths shown on the map by cause of death
-   * @method
-   *
-   * @param {string} cod - the cause of death to filter for
-   */
-  Map.prototype.filterByCod = function(cod) {
-    var copy = _.clone(this.data);
-
-    var filtered = _.filter(copy, function(d) {
-      return d.cod === cod;
-    });
-
-    this._drawMarkers(filtered);
-  };
-
-  /**
-   * Clear any filters set on the map
-   * @method
-   */
-  Map.prototype.clearFilters = function() {
-    this._drawMarkers(this.data);
-  };
-
+  
   return Map;
 
 }(jQuery, L, _));

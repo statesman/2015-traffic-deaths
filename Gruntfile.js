@@ -56,7 +56,8 @@ module.exports = function(grunt) {
             'bower_components/underscore/underscore.js',
             'bower_components/leaflet/dist/leaflet.js',
             'src/js/main.js',
-            'src/js/map.js'
+            'src/js/map.js',
+            'src/js/datastore.js'
           ]
         }
       }

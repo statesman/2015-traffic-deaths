@@ -93,6 +93,7 @@
       </div>
 
       <div class="col-md-3 col-sm-4 col-xs-12">
+        <div id="detail"><h2>testy</h2></div>
         <div id="year-toggle" class="list-group">
           <div class="list-group-item active">
             <h4 class="list-group-item-heading"><i class="fa fa-filter"></i> Filter by year</h4>
