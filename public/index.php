@@ -88,26 +88,17 @@
         <p>About traffic deaths in 2015, a record years,</p>
       </div>
 
-      <div class="col-md-9 col-sm-8 col-xs-12">
+      <div class="col-md-8 col-sm-8 col-xs-12">
         <div id="map"></div>
       </div>
 
-      <div class="col-md-3 col-sm-4 col-xs-12">
-        <div id="detail"><h2>testy</h2></div>
-        <div id="year-toggle" class="list-group">
-          <div class="list-group-item active">
-            <h4 class="list-group-item-heading"><i class="fa fa-filter"></i> Filter by year</h4>
-          </div>
-          <a href="#" class="list-group-item selected year-2015" data-year="2015">
-            <h4 class="list-group-item-heading"><i class="fa fa-square"></i> 2015 <i class="status-icon pull-right"></i></h4>
-            <p class="list-group-item-text">Includes South by Southwest events that have been tentatively approved or are under review by the City of Austin.</p>
-            <p class="list-group-item-text note"><i class="fa fa-asterisk"></i> <em>Indicates an event that is under review, as of March 13</em></p>
-          </a>
-          <a href="#" class="list-group-item selected year-2014" data-year="2014">
-            <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2014 <i class="status-icon pull-right"></i></h4>
-            <p class="list-group-item-text">Includes all events during South by Southwest week that were approved by the city.</p>
-          </a>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div id="detail">
+        <div class="clearfix">
+          <img class="pull-left instructions" src="assets/click-map.png" />
+          <h4>Select a point on the map to see additional details.</h4>
         </div>
+      </div>
       </div>
   </article>
 
