@@ -11,7 +11,7 @@ To make up for my lack of programming skills. Export as CSV then make these chan
 
 ### Age
 
-Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`
+Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another possible formulae `=ROUNDDOWN(YEARFRAC(I2, O2, 1), 0)`.
 
 ### Date of accident
 
@@ -20,6 +20,19 @@ Need to subtract 6 hours from the date_time_accident field since import-export m
 ### Column names
 
 Either change the column names to `lat` and `lng` or change the code to read `latitude` and `longitude`.
+
+### Fix gender
+
+Change M and F to Male and Female.
+
+### Race/ethnicity
+
+Fix em.
+
+### Relation
+
+same.
+
 
 ### Description field problems
 

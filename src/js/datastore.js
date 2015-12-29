@@ -5,7 +5,8 @@
   // setting up template for detail
   var tpl = _.template(
     "<h3><%= name %></h3>" +
-    "<h2><%= address %></h2>"
+    "<h2><%= address %></h2>" +
+    "<p><%= age %></p>"
   );
 
   // defining div for detail
@@ -23,7 +24,14 @@
       // pushing to the templage
       $detail.html(tpl({
         name: featured.name,
-        address: featured.address
+        race: featured.race,
+        gender: featured.gender,
+        age: featured.age,
+        date: featured.accident, // make sure this is the adjusted one
+        relation: featured.relation,
+        address: featured.address,
+        description: featured.description,
+        thumb: featured.thumb
       }));
     });
 

@@ -98,10 +98,27 @@
           <img class="pull-left instructions" src="assets/click-map.png" />
           <h4>Select a point on the map to see additional details.</h4>
         </div>
+ 
         <div class="clearfix">
           <h3 class="name">Name of victim</h3>
-          
+          <img class="photo" src="http://djuiuzgub7yaf.cloudfront.net/D5y20sZMT2FW-fDO1BNKGmnrSag=/200x300/smart/http://media.data.statesman.com/trafficfatal/images/Aguilar_V.jpg" width="50%"/>
+          <p>
+            Hispanic Male, 23.
+            <h5>Date of accident</h5>
+            1/1/2015
+            <h5>Relation</h5>
+            Driver<br>
+            <h5>Accident location</h5>
+            305 S. Congress Ave.
+          </p>          
         </div>
+
+        <div class="clearfix">
+          <h3>What happened</h3>
+          <p>Description of the accident, if there is one.</p>
+        </div>
+
+
       </div>
       </div>
   </article>
