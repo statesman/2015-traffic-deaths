@@ -1,13 +1,38 @@
 2015 Traffic deaths
 ====================
 
-From single-page project.
+From single-page project as outlined below.
 
 * There is a Grunt task called `processdata` that goes into `/tasks` and runs a file there. That is where I can change thumbor urls.
 
+## Manual data processing
 
+To make up for my lack of programming skills. Export as CSV then make these changes:
 
+### Age
 
+Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`
+
+### Date of accident
+
+Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. `=O2-TIME(6,0,0)`
+
+### Column names
+
+Either change the column names to `lat` and `lng` or change the code to read `latitude` and `longitude`.
+
+### Description field problems
+
+There are problem with exporting the description field.
+
+* The description cuts off in the middle of hrefs.
+* Special characters in the Redactor plugin are causing non-standard JSON.
+
+### Export and convert
+
+Run through [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) as JSON-Properties.
+
+Save as data.json in `public` folder.
 
 Single-page project
 ==============================

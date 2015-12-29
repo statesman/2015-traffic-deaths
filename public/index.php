@@ -85,18 +85,22 @@
         <h1>2015 traffic deaths</h1>
         <p>Published January 4, 2015</p>
         <p class="author">By Christian McDonald</p>
-        <p>About traffic deaths in 2015, a record years,</p>
+        <p>About traffic deaths in 2015, a record year.</p>
       </div>
 
-      <div class="col-md-8 col-sm-8 col-xs-12">
+      <div class="col-sm-8 col-xs-12">
         <div id="map"></div>
       </div>
 
-      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="col-sm-4 col-xs-12">
       <div id="detail">
         <div class="clearfix">
           <img class="pull-left instructions" src="assets/click-map.png" />
           <h4>Select a point on the map to see additional details.</h4>
+        </div>
+        <div class="clearfix">
+          <h3 class="name">Name of victim</h3>
+          
         </div>
       </div>
       </div>

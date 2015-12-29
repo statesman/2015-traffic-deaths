@@ -40,6 +40,7 @@ module.exports = function(grunt) {
         src: ['src/js/**.js']
       }
     },
+
     // Use Uglify to bundle up a pym file for the home page
     uglify: {
       options: {
