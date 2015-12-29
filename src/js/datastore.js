@@ -7,8 +7,19 @@
     '<div class="clearfix">' +
     '<h3 class="name"><%= name %></h3>' +
     '<img class="photo" src="<%= thumb %>" width="50%"/>' +
-    '<h2><%= address %></h2>' +
-    '<p><%= age %></p>'
+    '<p><%= race %> <%= gender %>, <%= age %>' +
+    '<h5>Accident date/time</h5>' +
+    '<%= date %>' + 
+    '<h5>Relation</h5>' + 
+    '<%= relation %>' +
+    '<h5>Accident location</h5>' + 
+    '<%= address %>' +
+    '</p>' +
+    '</div><div class="clearfix">' +
+    '<h3>What happened</h3>' +
+    '<%= description %>' + 
+    '</div>'
+
   );
 
 
@@ -53,7 +64,7 @@
         race: featured.race,
         gender: featured.gender,
         age: featured.age,
-        date: featured.accident, // make sure this is the adjusted one
+        date: featured.date_time_accident, // make sure this is the adjusted one
         relation: featured.relation,
         address: featured.address,
         description: featured.description,

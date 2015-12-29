@@ -17,6 +17,8 @@ Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another p
 
 Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. `=O2-TIME(6,0,0)`
 
+Also change to am/pm.
+
 ### Column names
 
 Either change the column names to `lat` and `lng` or change the code to read `latitude` and `longitude`.
