@@ -37,6 +37,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -123,7 +124,7 @@
       </div>
       <div class="col-xs-12">
         <div class="table-responsive">
-          <table id="detailDataTable" class="table table-condensed table-bordered">
+          <table id="table-javascript" class="table table-condensed table-bordered">
             <tr>
               <th>Date</th>
               <th>Name</th>
@@ -141,6 +142,30 @@
               <td>data col 6</td>
             </tr>
           </table>
+
+  <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+
         </div>
       </div>
   </article>
@@ -152,6 +177,22 @@
     <?php include "includes/metrics.inc"; ?>
 
     <script src="dist/scripts.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#example').DataTable( {
+              "ajax": "objects.txt",
+              "columns": [
+                  { "data": "name" },
+                  { "data": "position" },
+                  { "data": "office" },
+                  { "data": "extn" },
+                  { "data": "start_date" },
+                  { "data": "salary" }
+              ]
+          } );
+      } );
+    </script>
 
 
   <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>
