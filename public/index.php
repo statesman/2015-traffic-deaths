@@ -158,21 +158,7 @@
 
     <script src="dist/scripts.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $('#detailTable').DataTable( {
-              "ajax": "data-table.json",
-              "columns": [
-                  { "data": "accident" },
-                  { "data": "name" },
-                  { "data": "race" },
-                  { "data": "age" },
-                  { "data": "relation" },
-                  { "data": "address" }
-              ]
-          } );
-      } );
-    </script>
+
 
 
   <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>

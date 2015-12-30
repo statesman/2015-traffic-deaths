@@ -66,7 +66,8 @@ module.exports = function(grunt) {
             'bower_components/datatables.net-bs/js/dataTables.bootstrap.js',
             'src/js/main.js',
             'src/js/map.js',
-            'src/js/datastore.js'
+            'src/js/datastore.js',
+            'src/js/datatable.js'
           ]
         }
       }
