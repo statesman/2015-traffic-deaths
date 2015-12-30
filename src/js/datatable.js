@@ -4,7 +4,7 @@
       $('#detailTable').DataTable( {
           "ajax": "data-table.json",
           "columns": [
-              { "data": "accident" },
+              { "data": "date_time_converted" },
               { "data": "name" },
               { "data": "race" },
               { "data": "age" },
