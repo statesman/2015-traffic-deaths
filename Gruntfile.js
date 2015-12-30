@@ -9,7 +9,10 @@ module.exports = function(grunt) {
     // Copy FontAwesome files to the fonts/ directory
     copy: {
       fonts: {
-        src: 'bower_components/font-awesome/fonts/**',
+        src: [
+          'bower_components/font-awesome/fonts/**',
+          'bower_components/bootstrap/fonts/**'
+          ],
         dest: 'public/fonts/',
         flatten: true,
         expand: true
@@ -28,7 +31,10 @@ module.exports = function(grunt) {
           cleancss: false
         },
         files: {
-          "public/dist/style.css": "src/less/style.less"
+          'public/dist/style.css': [
+            'src/less/style.less',
+            'bower_components/datatables.net-bs/css/dataTables.bootstrap.css'
+            ]
         }
       }
     },
@@ -56,6 +62,8 @@ module.exports = function(grunt) {
             'bower_components/bootstrap/js/transition.js',
             'bower_components/underscore/underscore.js',
             'bower_components/leaflet/dist/leaflet.js',
+            'bower_components/datatables.net/js/jquery.dataTables.js',
+            'bower_components/datatables.net-bs/js/dataTables.bootstrap.js',
             'src/js/main.js',
             'src/js/map.js',
             'src/js/datastore.js'

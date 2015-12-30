@@ -6,7 +6,7 @@
   <?php
   $meta = array(
     "title" => "2015 traffic fatalities | Statesman.com",
-    "description" => "A look at the traffic deaths in Austin, Texas in of 2015, a record year.",
+    "description" => "A look at the traffic deaths in Austin, Texas in of 2015, a record  year.",
     "thumbnail" => "http://projects.statesman.com/project_path/assets/share.png", // needs update
     "shortcut_icon" => "http://media.cmgdigital.com/shared/media/2015-11-16-11-32-05/web/site/www_mystatesman_com/images/favicon.ico",
     "apple_touch_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_fa2d2d6e73614535b997734c7e7d2287.png",
@@ -37,7 +37,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="dist/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -124,47 +123,28 @@
       </div>
       <div class="col-xs-12">
         <div class="table-responsive">
-          <table id="table-javascript" class="table table-condensed table-bordered">
-            <tr>
-              <th>Date</th>
-              <th>Name</th>
-              <th>Race</th>
-              <th>Age</th>
-              <th>Relation</th>
-              <th>Location</th>
-            </tr>
-            <tr>
-              <td>data col 1</td>
-              <td>data col 2</td>
-              <td>data col 3</td>
-              <td>data col 4</td>
-              <td>data col 5</td>
-              <td>data col 6</td>
-            </tr>
+          <table id="detailTable" class="table table-condensed table-bordered">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Race</th>
+                <th>Age</th>
+                <th>Relation</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Race</th>
+                <th>Age</th>
+                <th>Relation</th>
+                <th>Location</th>
+              </tr>
+            </tfoot>
           </table>
-
-  <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>
-    </table>
 
         </div>
       </div>
@@ -177,18 +157,18 @@
     <?php include "includes/metrics.inc"; ?>
 
     <script src="dist/scripts.js"></script>
-    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function() {
-          $('#example').DataTable( {
-              "ajax": "objects.txt",
+          $('#detailTable').DataTable( {
+              "ajax": "data-table.json",
               "columns": [
+                  { "data": "accident" },
                   { "data": "name" },
-                  { "data": "position" },
-                  { "data": "office" },
-                  { "data": "extn" },
-                  { "data": "start_date" },
-                  { "data": "salary" }
+                  { "data": "race" },
+                  { "data": "age" },
+                  { "data": "relation" },
+                  { "data": "address" }
               ]
           } );
       } );
