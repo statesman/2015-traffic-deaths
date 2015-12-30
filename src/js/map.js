@@ -1,6 +1,6 @@
 var map;
 
-var dataUrl = 'data-test.json';
+var dataUrl = 'data.json';
 
 $.getJSON(dataUrl, function(data) {
     map = new DbMap(data);
@@ -33,19 +33,19 @@ var DbMap = (function($, L, _) {
 
       container.innerHTML = 
       '<ul class="list-inline">' +
-        '<li class="death-marker-driver">' +
+        '<li class="death-marker-Driver">' +
           '<i class="fa fa-circle"></i> Driver ' +
         '</li>' +
-        '<li class="death-marker-passenger">' +
+        '<li class="death-marker-Passenger">' +
           '<i class="fa fa-circle"></i> Passenger ' +
         '</li>' +
-        '<li class="death-marker-motorcycle">' +
+        '<li class="death-marker-Motorcycle">' +
           '<i class="fa fa-circle"></i> Motorcycle ' +
         '</li>' +
-        '<li class="death-marker-bicycle">' +
+        '<li class="death-marker-Bicycle">' +
           '<i class="fa fa-circle"></i> Bicycle ' +
         '</li>' +
-        '<li class="death-marker-pedestrian">' +
+        '<li class="death-marker-Pedestrian">' +
           '<i class="fa fa-circle"></i> Pedestrian ' +
         '</li>' +
       '</ul>';
@@ -125,7 +125,7 @@ var DbMap = (function($, L, _) {
     // Add our layers to the featureGroup
     _.each(data, function(d) {
       this.markers.addLayer(
-        L.marker([d.lat, d.lng], {
+        L.marker([d.latitude, d.longitude], {
           id: d.id,
           icon: this._makeIcon(d.relation),
           title: d.last_name

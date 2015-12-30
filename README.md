@@ -9,15 +9,22 @@ From single-page project as outlined below.
 
 To make up for my lack of programming skills. Export as CSV then make these changes:
 
+### Description:
+
+* Have to exchange bad quotes from MS Word.
+* have to get rid of the extra returns entered by Alejandro. Use no wrap to find them. You'll know if the paste doesn't match rows. Replace the old column.
+
+### Date of accident
+
+* Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. `=O2-TIME(6,0,0)`
+* Change format to time with AM/PM.
+* rename `date_time_converted`.
+* Paste as values and then get rid of old column.
+
 ### Age
 
 Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another possible formulae `=ROUNDDOWN(YEARFRAC(I2, O2, 1), 0)`.
 
-### Date of accident
-
-Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. `=O2-TIME(6,0,0)`
-
-Also change to am/pm.
 
 ### Column names
 
@@ -29,19 +36,11 @@ Change M and F to Male and Female.
 
 ### Race/ethnicity
 
-Fix em.
+Fix case.
 
 ### Relation
 
-same.
-
-
-### Description field problems
-
-There are problem with exporting the description field.
-
-* The description cuts off in the middle of hrefs.
-* Special characters in the Redactor plugin are causing non-standard JSON.
+Fix case.
 
 ### Export and convert
 
