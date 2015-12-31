@@ -122,6 +122,7 @@
         </div>
       </div>
       <div class="col-xs-12">
+        <h3>List of victims</h3>
         <div class="table-responsive">
           <table id="detailTable" class="table table-condensed table-bordered">
             <thead>

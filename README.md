@@ -24,9 +24,10 @@ To make up for my lack of programming skills. Export as CSV then make these chan
 
 ### Description:
 
-* Have to exchange bad quotes from MS Word.
-* have to get rid of the extra returns entered by Alejandro. Use no wrap to find them. You'll know if the paste doesn't match rows. Replace the old column.
-* Replace double quotes into single quotes 
+* Check for bad quotes from MS Word.
+* Check for bad returns.
+
+By using the a better [csv to json](http://www.convertcsv.com/csv-to-json.htm) converter the quote marks are handled.
 
 ### Date of accident
 
@@ -37,7 +38,7 @@ To make up for my lack of programming skills. Export as CSV then make these chan
 
 ### Age
 
-* Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another possible formulae `=ROUNDDOWN(YEARFRAC(I2, O2, 1), 0)`.
+* Add column after date_birth and use this `=ROUNDDOWN(YEARFRAC(O2, J2, 1), 0)`.
 * Change type to General.
 
 ### Fix gender
@@ -51,6 +52,20 @@ Fix case. `=REPLACE(L2,1,1,UPPER(LEFT(L2,1)))`
 ### Relation
 
 Fix case. `=REPLACE(N2,1,1,UPPER(LEFT(N2,1)))`
+
+### Thumbs
+
+Replace blank thumbs with a gif. Yes, this is totally the wrong way to do this but so is every other manual fix here.
+
+Add to all the blank cells:
+
+`assets/spacer.gif`
+
+If changed in the JSON:
+
+`"thumb":""`
+`"thumb":"assets/spacer.gif"`
+
 
 ### Export and convert
 
