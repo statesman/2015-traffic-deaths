@@ -64,7 +64,7 @@
         race: featured.race,
         gender: featured.gender,
         age: featured.age,
-        date: featured.date_time_accident, // make sure this is the adjusted one
+        date: featured.date_time_converted, // make sure this is the adjusted one
         relation: featured.relation,
         address: featured.address,
         description: featured.description,

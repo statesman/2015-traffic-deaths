@@ -124,7 +124,7 @@ module.exports = function(grunt) {
           authKey: 'cmg'
         },
         src: 'public',
-        dest: '/stage_aas/projects/news/2015-traffic-deaths',
+        dest: '/prod_aas/projects/news/2015-traffic-deaths',
         exclusions: ['dist/tmp','Thumbs.db','.DS_Store'],
         simple: false,
         useList: false

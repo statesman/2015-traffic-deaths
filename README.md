@@ -13,22 +13,19 @@ To make up for my lack of programming skills. Export as CSV then make these chan
 
 * Have to exchange bad quotes from MS Word.
 * have to get rid of the extra returns entered by Alejandro. Use no wrap to find them. You'll know if the paste doesn't match rows. Replace the old column.
+* Replace double quotes into single quotes 
 
 ### Date of accident
 
-* Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. `=O2-TIME(6,0,0)`
+* Need to subtract 6 hours from the date_time_accident field since import-export module does not convert timezone upon export. Create a column after date_time_accident. Use function `=N2-TIME(6,0,0)`.
 * Change format to time with AM/PM.
 * rename `date_time_converted`.
 * Paste as values and then get rid of old column.
 
 ### Age
 
-Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another possible formulae `=ROUNDDOWN(YEARFRAC(I2, O2, 1), 0)`.
-
-
-### Column names
-
-Either change the column names to `lat` and `lng` or change the code to read `latitude` and `longitude`.
+* Add column after date_birth and use this `=FLOOR(((O2-J2)/365.25),1)`. Another possible formulae `=ROUNDDOWN(YEARFRAC(I2, O2, 1), 0)`.
+* Change type to General.
 
 ### Fix gender
 
@@ -36,11 +33,11 @@ Change M and F to Male and Female.
 
 ### Race/ethnicity
 
-Fix case.
+Fix case. `=REPLACE(L2,1,1,UPPER(LEFT(L2,1)))`
 
 ### Relation
 
-Fix case.
+Fix case. `=REPLACE(N2,1,1,UPPER(LEFT(N2,1)))`
 
 ### Export and convert
 
