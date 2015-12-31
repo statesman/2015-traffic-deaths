@@ -3,8 +3,6 @@
 
 From single-page project as outlined below.
 
-* There is a Grunt task called `processdata` that goes into `/tasks` and runs a file there. That is where I can change thumbor urls.
-
 ## Manual data processing
 
 To make up for my lack of programming skills. Export as CSV then make these changes:
