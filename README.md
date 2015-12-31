@@ -3,6 +3,21 @@
 
 From single-page project as outlined below.
 
+## Datatables
+
+First time to use datatables for something.
+
+* Uses [datatables](https://datatables.net/) for bootstrap installed from [bower](https://datatables.net/blog/2015-11-09).
+
+`$ bower install --save datatables.net-dt`
+`$ bower install --save datatables.net-bs`
+
+* Add those two file installs to `Gruntfile.js`
+* include the `pagination` and `glyphicons` modules in `src/less/custom-bootstrap/bootstrap.less`
+* Add glyphicon fonts, which I did by adding copy to `Gruntfile.js` like we do fontawesome.
+
+I'm calling the data for the table in a copy of the data because it has to be formatted slightly different for leaflet.js. Surely there is a way to use the same data file for both instances.
+
 ## Manual data processing
 
 To make up for my lack of programming skills. Export as CSV then make these changes:
