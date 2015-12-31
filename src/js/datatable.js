@@ -2,7 +2,7 @@
 
   $(document).ready(function() {
       $('#detailTable').DataTable( {
-          "ajax": "data-table.json",
+          "ajax": "data-test-table.json",
           "columns": [
               { "data": "date_time_converted" },
               { "data": "name" },
