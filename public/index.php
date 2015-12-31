@@ -83,9 +83,9 @@
     <div class="row">
       <div class="col-xs-12 header">
         <h1>2015 traffic deaths</h1>
-        <p>Published January 4, 2015</p>
-        <p class="author">By Christian McDonald</p>
-        <p>About traffic deaths in 2015, a record year.</p>
+        <p>Published January 8, 2015</p>
+        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with XXX deaths, and authorities have not identified what caused the spike or a way to curve it. 
+        To learn more about the victims, select a point on the map for more details, or peruse the table below.</p>
       </div>
 
       <div class="col-sm-8 col-xs-12">
@@ -99,26 +99,6 @@
             <h4>Select a point on the map to see additional details.</h4>
           </div>
    
-<!--
-          <div class="clearfix">
-            <h3 class="name">Name of victim</h3>
-            <img class="photo" src="http://djuiuzgub7yaf.cloudfront.net/D5y20sZMT2FW-fDO1BNKGmnrSag=/200x300/smart/http://media.data.statesman.com/trafficfatal/images/Aguilar_V.jpg" width="50%"/>
-            <p>
-              Hispanic Male, 23.
-              <h5>Date of accident</h5>
-              1/1/2015
-              <h5>Relation</h5>
-              Driver<br>
-              <h5>Accident location</h5>
-              305 S. Congress Ave.
-            </p>          
-          </div>
-
-          <div class="clearfix">
-            <h3>What happened</h3>
-            <p>Description of the accident, if there is one.</p>
-          </div>
--->
         </div>
       </div>
       <div class="col-xs-12">
@@ -147,6 +127,13 @@
             </tfoot>
           </table>
 
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <strong>Data:</strong> Alejandro Martinez-Cabrera, Nicole Chavez, Phil Jankoski, Katie Urbaszewski, Roberto Villalpando. <strong>Presentation:</strong> Christian McDonald.
+          </div>
         </div>
       </div>
   </article>
