@@ -143,7 +143,7 @@
       <div class="col-xs-12">
         <div class="panel panel-default">
           <div class="panel-body">
-            <strong>Source:</strong> Austin Police Department with further reporting by Alejandro Martinez-Cabrera, Nicole Chavez, Phil Jankoski, Katie Urbaszewski, Roberto Villalpando. <strong>Presentation:</strong> Christian McDonald.
+            <strong>Source:</strong> Austin Police Department with further reporting by Alejandro Martinez-Cabrera, Nicole Chavez, Phil Jankoski, Katie Urbaszewski, Roberto Villalpando. <strong>Graphics:</strong> Robert Calzada. <strong>Presentation:</strong> Christian McDonald.
           </div>
         </div>
       </div>
