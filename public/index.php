@@ -84,8 +84,7 @@
       <div class="col-xs-12 header">
         <h1>2015 traffic deaths</h1>
         <p>Published January 8, 2015</p>
-        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with XXX deaths, and authorities have not identified what caused the spike or a way to curve it. 
-        To learn more about the victims, select a point on the map for more details, or peruse the table below.</p>
+        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, select a point on the map for more details, or peruse the table below.</p>
       </div>
 
       <div class="col-sm-8 col-xs-12">

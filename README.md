@@ -1,7 +1,7 @@
 2015 Traffic deaths
 ====================
 
-From single-page project as outlined below.
+Project of traffic deaths for 2015. Mainly a leaflet map and a table, with some added static graphics.
 
 ## Datatables
 
