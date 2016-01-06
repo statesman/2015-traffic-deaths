@@ -67,11 +67,21 @@ If changed in the JSON:
 `"thumb":"assets/spacer.gif"`
 
 
-### Export and convert
+### Convert to JSON
 
-Run through [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) as JSON-Properties.
+Once the CSV file is cleaned up in Excel, Convert to json for two data sources:
 
-Save as data.json in `public` folder.
+Use default valeus at this [csv to json](http://www.convertcsv.com/csv-to-json.htm) converter. This will handle quote marks better than Shan Carter's Mr. Data Converter.
+
+* Save as data.json in `public` folder.
+* Add array to the blank line below in the file `data-table.json`.
+
+``` json
+{
+  "data": 
+
+}
+```
 
 Single-page project
 ==============================
