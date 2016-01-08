@@ -7,7 +7,7 @@
   $meta = array(
     "title" => "2015 traffic fatalities most on record | Statesman.com",
     "description" => "The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it.",
-    "thumbnail" => "http://projects.statesman.com/project_path/assets/share.png",
+    "thumbnail" => "http://projects.statesman.com/news/2015-traffic-deaths/assets/share.png",
     "shortcut_icon" => "http://media.cmgdigital.com/shared/media/2015-11-16-11-32-05/web/site/www_mystatesman_com/images/favicon.ico",
     "apple_touch_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_fa2d2d6e73614535b997734c7e7d2287.png",
     "url" => "http://projects.statesman.com/news/2015-traffic-deaths/",
