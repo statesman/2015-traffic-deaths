@@ -132,11 +132,11 @@
     <hr>
     <div class="row">  
       <div class="col-lg-9"><img src="assets/tf-type.png" class="img-responsive"></div>
-      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-daytime.png" class="img-responsive"></div>
-      <div class="col-sm-4 col-lg-3"><img src="assets/tf-perpop.png" class="img-responsive"></div>
-      <div class="hidden-sm hidden-xs hidden-md col-lg-6"><img src="assets/tf-daytime.png" class="img-responsive"></div>
-      <div class="col-sm-4 col-lg-3"><img src="assets/tf-annual.png" class="img-responsive"></div>
+      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
       <div class="col-sm-4 col-lg-3"><img src="assets/tf-vehicles.png" class="img-responsive"></div>
+      <div class="hidden-sm hidden-xs hidden-md col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
+      <div class="col-sm-4 col-lg-3"><img src="assets/tf-annual.png" class="img-responsive"></div>
+      <div class="col-sm-4 col-lg-3"><img src="assets/tf-demo.png" class="img-responsive"></div>
     </div>
     <div class="row">
       <div class="col-xs-12">
