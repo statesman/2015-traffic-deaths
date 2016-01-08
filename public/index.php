@@ -66,8 +66,9 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="./">Interactive <span class="sr-only">(current)</span></a></li>
         <li><a href="#" target="_blank">Story</a></li>
+        <li class="active"><a href="./">Interactive <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://www.statesman.com/interactive/timeline/2015-traffic-fatalities/" target="_blank">Timeline</a></li>
         <li class="visible-xs small-social"><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
       </ul>
         <ul class="nav navbar-nav navbar-right social hidden-xs">
@@ -86,20 +87,8 @@
         <p>Published January 8, 2015</p>
         <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, select a point on the map for more details, or peruse the table below.</p>
       </div>
-
-      <div class="col-sm-8 col-xs-12">
-        <div id="map"></div>
-      </div>
-
-      <div class="col-sm-4 col-xs-12">
-        <div id="detail">
-          <div class="clearfix">
-            <img class="pull-left instructions" src="assets/click-map.png" />
-            <h4>Select a point on the map to see additional details.</h4>
-          </div>
-   
-        </div>
-      </div>
+    </div>
+    <div class="row">
       <div class="col-xs-12">
         <h3>List of victims</h3>
         <div class="table-responsive">
@@ -130,13 +119,34 @@
       </div>
     </div>
     <hr>
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Accident details</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-xs-12">
+        <div id="map"></div>
+      </div>
+
+      <div class="col-sm-4 col-xs-12">
+        <div id="detail">
+          <div class="clearfix">
+            <img class="pull-left instructions" src="assets/click-map.png" />
+            <h4>Select a point on the map to see additional details about each accident.</h4>
+          </div>
+   
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="row">  
       <div class="col-lg-9"><img src="assets/tf-type.png" class="img-responsive"></div>
-      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
-      <div class="col-sm-4 col-lg-3"><img src="assets/tf-vehicles.png" class="img-responsive"></div>
+      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-time.png" class="img-responsive" style="max-width: 520px;"></div>
+      <div class="col-sm-4 col-lg-3"><img src="assets/tf-vehicles.png" class="img-responsive" style="max-width: 225px;"></div>
       <div class="hidden-sm hidden-xs hidden-md col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
-      <div class="col-sm-4 col-lg-3"><img src="assets/tf-annual.png" class="img-responsive"></div>
-      <div class="col-sm-4 col-lg-3"><img src="assets/tf-demo.png" class="img-responsive"></div>
+      <div class="col-sm-4 col-lg-3"><img src="assets/tf-annual.png" class="img-responsive" style="max-width: 225px;"></div>
+      <div class="col-sm-4 col-lg-3"><img src="assets/tf-demo.png" class="img-responsive" style="max-width: 225px;"></div>
     </div>
     <div class="row">
       <div class="col-xs-12">
@@ -146,6 +156,7 @@
           </div>
         </div>
       </div>
+    </div>
   </article>
 
     <!-- bottom matter -->
