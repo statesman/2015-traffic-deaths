@@ -5,7 +5,7 @@
   // but I don't know how
   $(document).ready(function() {
       $('#detailTable').DataTable( {
-          "ajax": "data-test-table.json", // link to the data
+          "ajax": "data-table.json", // link to the data
           "columns": [
               { "data": "date_time_converted" },
               { "data": "name" },

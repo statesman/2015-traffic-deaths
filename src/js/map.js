@@ -1,6 +1,6 @@
 var map;
 
-var dataUrl = 'data-test.json';
+var dataUrl = 'data.json';
 
 $.getJSON(dataUrl, function(data) {
     map = new DbMap(data);
