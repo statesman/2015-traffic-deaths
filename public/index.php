@@ -66,7 +66,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#" target="_blank">Story</a></li>
+        <li><a href="http://www.mystatesman.com/news/news/traffic/record-number-of-traffic-deaths-has-officials-scra/npzTT/" target="_blank">Story</a></li>
         <li class="active"><a href="./">Interactive <span class="sr-only">(current)</span></a></li>
         <li><a href="http://www.statesman.com/interactive/timeline/2015-traffic-fatalities/" target="_blank">Timeline</a></li>
         <li class="visible-xs small-social"><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
