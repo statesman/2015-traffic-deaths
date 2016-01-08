@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <?php
   $meta = array(
-    "title" => "2015 traffic fatalities | Statesman.com",
-    "description" => "A look at the traffic deaths in Austin, Texas in of 2015, a record  year.",
-    "thumbnail" => "http://projects.statesman.com/project_path/assets/share.png", // needs update
+    "title" => "2015 traffic fatalities most on record | Statesman.com",
+    "description" => "The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it.",
+    "thumbnail" => "http://projects.statesman.com/project_path/assets/share.png",
     "shortcut_icon" => "http://media.cmgdigital.com/shared/media/2015-11-16-11-32-05/web/site/www_mystatesman_com/images/favicon.ico",
     "apple_touch_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_fa2d2d6e73614535b997734c7e7d2287.png",
     "url" => "http://projects.statesman.com/news/2015-traffic-deaths/",
@@ -83,9 +83,9 @@
   <article class="container">
     <div class="row">
       <div class="col-xs-12 header">
-        <h1>2015 traffic deaths</h1>
+        <h1>2015 traffic deaths: Deadliest on record</h1>
         <p>Published January 8, 2015</p>
-        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, select a point on the map for more details, or peruse the table below.</p>
+        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, peruse the table below, or click on the map points for accident details.</p>
       </div>
     </div>
     <div class="row">
