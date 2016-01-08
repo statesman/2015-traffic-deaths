@@ -85,9 +85,30 @@
       <div class="col-xs-12 header">
         <h1>2015 traffic deaths: Deadliest on record</h1>
         <p>Published January 8, 2015</p>
-        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, peruse the table below, or click on the map points for accident details.</p>
+        <p>The 2015 year was the deadliest on record in Austin for traffic fatalities with 102 deaths, and authorities have not identified what caused the spike or a way to curb it. To learn more about the victims, click on the map points for accident details or peruse the table below.</p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Accident details</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-xs-12">
+        <div id="map"></div>
+      </div>
+
+      <div class="col-sm-4 col-xs-12">
+        <div id="detail">
+          <div class="clearfix">
+            <img class="pull-left instructions" src="assets/click-map.png" />
+            <h4>Select a point on the map to see additional details about each accident.</h4>
+          </div>
+   
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="row">
       <div class="col-xs-12">
         <h3>List of victims</h3>
@@ -115,27 +136,6 @@
             </tfoot>
           </table>
 
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-xs-12">
-        <h3>Accident details</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8 col-xs-12">
-        <div id="map"></div>
-      </div>
-
-      <div class="col-sm-4 col-xs-12">
-        <div id="detail">
-          <div class="clearfix">
-            <img class="pull-left instructions" src="assets/click-map.png" />
-            <h4>Select a point on the map to see additional details about each accident.</h4>
-          </div>
-   
         </div>
       </div>
     </div>
