@@ -142,7 +142,7 @@
     <hr>
     <div class="row">  
       <div class="col-lg-9"><img src="assets/tf-type.png" class="img-responsive"></div>
-      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-time.png" class="img-responsive" style="max-width: 520px;"></div>
+      <div class="visible-sm-block visible-xs-block visible-md-block col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
       <div class="col-sm-4 col-lg-3"><img src="assets/tf-vehicles.png" class="img-responsive" style="max-width: 225px;"></div>
       <div class="hidden-sm hidden-xs hidden-md col-lg-6"><img src="assets/tf-time.png" class="img-responsive"></div>
       <div class="col-sm-4 col-lg-3"><img src="assets/tf-annual.png" class="img-responsive" style="max-width: 225px;"></div>
